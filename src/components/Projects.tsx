@@ -11,7 +11,7 @@ export default function Projects() {
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'PostgreSQL'],
       github: 'https://github.com/Jmpyang/SmartSan',
-      live: 'https://smart-san.vercel.app/'
+      live: 'https://d-gs.vercel.app/'
     },
     {
       title: 'Task Management App',
@@ -27,7 +27,7 @@ export default function Projects() {
       image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80',
       technologies: ['React', 'OpenWeather API', 'Chart.js', 'CSS3', 'Geolocation API'],
       github: 'https://github.com/Jmpyang/SmartSan',
-      live: 'https://smart-san.vercel.app/'
+      live: 'https://d-gs.vercel.app/'
     },
     {
       title: 'Social Media Analytics',
