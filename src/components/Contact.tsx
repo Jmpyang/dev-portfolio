@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Phone, Send } from 'lucide-react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 
 export default function Contact() {
@@ -12,6 +12,11 @@ export default function Contact() {
     subject: '',
     message: ''
   })
+
+  // Initialize EmailJS once on component mount
+  React.useEffect(() => {
+    emailjs.init('GJWu-qfLkkWxy8T3U')
+  }, [])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
@@ -27,31 +32,22 @@ export default function Contact() {
       alert('Please fill in all fields')
       return
     }
-    // Send form data via email using EmailJS
-
-    // Initialize EmailJS (add your public key)
-
-    emailjs.init('GJWu-qfLkkWxy8T3U')
 
     try {
       await emailjs.send('service_6iyv61u', 'template_gb6m4sr', {
-        to_email: 'jmpyang66@gmail.com',
-        from_name: formData.name,
-        from_email: formData.email,
+        name: formData.name,
+        email: formData.email,
         subject: formData.subject,
         message: formData.message
       })
       
       alert('Message sent successfully!')
+      console.log('Form submitted:', formData)
       setFormData({ name: '', email: '', subject: '', message: '' })
     } catch (error) {
       alert('Error sending message. Please try again.')
       console.error('Form submission error:', error)
-      return
     }
-    console.log('Form submitted:', formData)
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' })
   }
 
   const contactInfo = [
