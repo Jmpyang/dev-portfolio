@@ -10,32 +10,32 @@ export default function Projects() {
       description: 'A full-stack e-commerce solution built with Next.js, TypeScript, and Stripe integration. Features include user authentication, shopping cart, and admin dashboard.',
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=800&q=80',
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'PostgreSQL'],
-      github: 'https://github.com',
-      live: 'https://example.com'
+      github: 'https://github.com/Jmpyang/SmartSan',
+      live: 'https://smart-san.vercel.app/'
     },
     {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
       image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&w=800&q=80',
       technologies: ['React', 'Node.js', 'Socket.io', 'MongoDB', 'Material-UI'],
-      github: 'https://github.com',
-      live: 'https://example.com'
+      github: 'https://github.com/Jmpyang/SmartSan',
+      live: 'https://smart-san.vercel.app/'
     },
     {
       title: 'Weather Dashboard',
       description: 'A responsive weather dashboard that provides real-time weather information, forecasts, and interactive maps with location-based services.',
       image: 'https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=800&q=80',
       technologies: ['React', 'OpenWeather API', 'Chart.js', 'CSS3', 'Geolocation API'],
-      github: 'https://github.com',
-      live: 'https://example.com'
+      github: 'https://github.com/Jmpyang/SmartSan',
+      live: 'https://smart-san.vercel.app/'
     },
     {
       title: 'Social Media Analytics',
       description: 'An analytics platform for social media management with data visualization, sentiment analysis, and automated reporting features.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
       technologies: ['Vue.js', 'Python', 'D3.js', 'Redis', 'Docker'],
-      github: 'https://github.com',
-      live: 'https://example.com'
+      github: 'https://github.com/Jmpyang/SmartSan',
+      live: 'https://smart-san.vercel.app/'
     }
   ]
 

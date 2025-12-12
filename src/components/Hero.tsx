@@ -83,7 +83,7 @@ export default function Hero() {
             className="flex justify-center space-x-6 mb-16"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/Jmpyang"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
@@ -92,7 +92,7 @@ export default function Hero() {
             </a>
             
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/joshua-pius123"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
@@ -101,7 +101,7 @@ export default function Hero() {
             </a>
             
             <a
-              href="mailto:hello@example.com"
+              href="mailto:jmpyang66@gmail.com"
               className="p-3 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110"
             >
               <Mail className="w-6 h-6 text-gray-700 dark:text-gray-300" />

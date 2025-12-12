@@ -8,17 +8,17 @@ export default function Footer() {
   const socialLinks = [
     {
       name: 'GitHub',
-      url: 'https://github.com',
+      url: 'https://github.com/Jmpyang',
       icon: Github
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
+      url: 'www.linkedin.com/in/joshua-pius123',
       icon: Linkedin
     },
     {
       name: 'Email',
-      url: 'mailto:hello@example.com',
+      url: 'jmpyang66@gmail.com',
       icon: Mail
     }
   ]
@@ -97,10 +97,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
               © {currentYear} Joshua. All rights reserved.
             </p>
-            
-            <p className="text-gray-400 text-sm flex items-center">
-              Made with <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" /> using Next.js & Tailwind CSS
-            </p>
+
           </div>
         </div>
       </div>

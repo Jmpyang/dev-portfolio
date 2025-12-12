@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Mail, MapPin, Phone, Send } from 'lucide-react'
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -19,9 +20,35 @@ export default function Contact() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
+    // Validate form data
+    if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+      alert('Please fill in all fields')
+      return
+    }
+    // Send form data via email using EmailJS
+
+    // Initialize EmailJS (add your public key)
+
+    emailjs.init('GJWu-qfLkkWxy8T3U')
+
+    try {
+      await emailjs.send('service_6iyv61u', 'template_gb6m4sr', {
+        to_email: 'jmpyang66@gmail.com',
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+      })
+      
+      alert('Message sent successfully!')
+      setFormData({ name: '', email: '', subject: '', message: '' })
+    } catch (error) {
+      alert('Error sending message. Please try again.')
+      console.error('Form submission error:', error)
+      return
+    }
     console.log('Form submitted:', formData)
     // Reset form
     setFormData({ name: '', email: '', subject: '', message: '' })
@@ -31,19 +58,19 @@ export default function Contact() {
     {
       icon: Mail,
       title: 'Email',
-      content: 'hello@example.com',
-      link: 'mailto:hello@example.com'
+      content: 'jmpyang66@gmail.com',
+      link: 'jmpyang66@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      content: '+254 (717) 340-006',
+      link: 'tel:+254717340006'
     },
     {
       icon: MapPin,
       title: 'Location',
-      content: 'New York, NY',
+      content: 'Nairobi, KE',
       link: '#'
     }
   ]
